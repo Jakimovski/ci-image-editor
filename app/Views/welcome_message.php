@@ -194,7 +194,6 @@
 	</style>
 </head>
 <body>
-
 <!-- HEADER: MENU + HEROE SECTION -->
 <header>
 
