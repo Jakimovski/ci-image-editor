@@ -1,0 +1,20 @@
+CRITICAL - 2021-02-15 07:51:12 --> Call to undefined function set_value()
+#0 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\View\View.php(220): include()
+#1 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render()
+#3 C:\nginx\html\ci-image-editor\app\Controllers\Users.php(14): view()
+#4 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Users->login()
+#5 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#6 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#7 C:\nginx\html\ci-image-editor\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-02-15 15:23:09 --> syntax error, unexpected '}', expecting ';'
+#0 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(893): class_exists()
+#5 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#7 C:\nginx\html\ci-image-editor\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}

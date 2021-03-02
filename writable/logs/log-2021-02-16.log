@@ -1,0 +1,61 @@
+CRITICAL - 2021-02-16 06:43:43 --> Invalid file: users/dashboard.php
+#0 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render()
+#2 C:\nginx\html\ci-image-editor\app\Controllers\Users.php(113): view()
+#3 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Users->dashboard()
+#4 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\nginx\html\ci-image-editor\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-02-16 06:44:43 --> Invalid file: users/dashboard.php
+#0 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render()
+#2 C:\nginx\html\ci-image-editor\app\Controllers\Users.php(113): view()
+#3 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Users->dashboard()
+#4 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\nginx\html\ci-image-editor\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-02-16 06:44:54 --> Invalid file: users/dashboard.php
+#0 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render()
+#2 C:\nginx\html\ci-image-editor\app\Controllers\Users.php(113): view()
+#3 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Users->dashboard()
+#4 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\nginx\html\ci-image-editor\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-02-16 07:45:12 --> Undefined variable: user
+#0 C:\nginx\html\ci-image-editor\app\Views\users\profile.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\nginx\\html\\c...')
+#2 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render()
+#4 C:\nginx\html\ci-image-editor\app\Controllers\Users.php(115): view()
+#5 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Users->profile()
+#6 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\nginx\html\ci-image-editor\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-16 10:23:27 --> syntax error, unexpected ';', expecting ']'
+#0 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(893): class_exists()
+#5 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#7 C:\nginx\html\ci-image-editor\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-02-16 11:22:06 --> Cannot declare class Config\Services, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-16 12:11:16 --> syntax error, unexpected '}'
+#0 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(893): class_exists()
+#5 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#7 C:\nginx\html\ci-image-editor\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}

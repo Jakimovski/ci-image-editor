@@ -1,0 +1,38 @@
+ERROR - 2021-02-17 06:46:45 --> mysqli_sql_exception: Table 'users' already exists in C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query()
+#1 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Database\Forge.php(525): CodeIgniter\Database\BaseConnection->query()
+#4 C:\nginx\html\ci-image-editor\app\Database\Migrations\2021-02-17-123031_CreateUsersTable.php(45): CodeIgniter\Database\Forge->createTable()
+#5 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(1057): App\Database\Migrations\CreateUsersTable->up()
+#6 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#10 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#11 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#12 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#13 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#14 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CLI\Console.php(61): CodeIgniter\CodeIgniter->run()
+#15 C:\nginx\html\ci-image-editor\spark(66): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2021-02-17 06:47:03 --> mysqli_sql_exception: Table 'users' already exists in C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query()
+#1 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Database\Forge.php(525): CodeIgniter\Database\BaseConnection->query()
+#4 C:\nginx\html\ci-image-editor\app\Database\Migrations\2021-02-17-123031_CreateUsersTable.php(45): CodeIgniter\Database\Forge->createTable()
+#5 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(1057): App\Database\Migrations\CreateUsersTable->up()
+#6 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+#7 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(94): CodeIgniter\Database\MigrationRunner->latest()
+#8 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(80): CodeIgniter\CLI\Commands->run()
+#10 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(58): CodeIgniter\CLI\CommandRunner->index()
+#11 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(932): CodeIgniter\CLI\CommandRunner->_remap()
+#12 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#13 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#14 C:\nginx\html\ci-image-editor\vendor\codeigniter4\framework\system\CLI\Console.php(61): CodeIgniter\CodeIgniter->run()
+#15 C:\nginx\html\ci-image-editor\spark(66): CodeIgniter\CLI\Console->run()
+#16 {main}
