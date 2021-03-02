@@ -10,7 +10,7 @@ class UserRules
     public function validateUser(string $str, string $fields, array $data)
     {
         $model = new UserModel();
-        $user = $model->where('email', $data['email'])
+        $user = $model->where('username', $data['username'])
             ->first();
 
         if (!$user) {
@@ -23,7 +23,7 @@ class UserRules
     public function verifyUser(string $str, string $fields, array $data)
     {
         $model = new UserModel();
-        $user = $model->where('email', $data['email'])
+        $user = $model->where('username', $data['username'])
             ->first();
 
         if (!$user) {

@@ -24,8 +24,8 @@
             <?php endif; ?>
             <form action="/user/login" method="post" class="">
                 <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" name="email" id="email" value="<?= set_value('email') ?>" class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" value="<?= set_value('username') ?>" class="form-control">
                 </div>
                 <div class="form-group mt-2">
                     <label for="password">Password</label>

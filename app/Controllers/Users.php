@@ -19,7 +19,7 @@ class Users extends BaseController
 		if ($this->request->getMethod() == 'post') {
 			$rules = [
 
-				'email' => 'required|valid_email',
+				'username' => 'required',
 				'password' => [
 					'rules' => 'required|min_length[8]|max_length[255]|validateUser[email,password]|verifyUser[email,validated]',
 					'errors' => [
@@ -31,7 +31,7 @@ class Users extends BaseController
 
 			if ($this->validate($rules)) {
 				$model = new UserModel();
-				$userData = $model->where('email', $this->request->getVar('email'))
+				$userData = $model->where('username', $this->request->getVar('username'))
 					->first();
 
 
@@ -73,6 +73,7 @@ class Users extends BaseController
 					'label' => 'last name',
 					'rules' => 'required|min_length[2]|max_length[30]',
 				],
+				'username' => 'required|min_length[2]|max_length[40]|is_unique[users.username]',
 				'email' => 'required|valid_email|is_unique[users.email]',
 				'password' => 'required|min_length[8]|max_length[255]',
 				'password_confirm' => [
@@ -91,6 +92,7 @@ class Users extends BaseController
 				$userData = [
 					'first_name' => $firstName,
 					'last_name' => $lastName,
+					'username' => $this->request->getVar('username'),
 					'email' => $emailAddress,
 					'password' => $this->request->getVar('password'),
 					'verification_code' => $verificationCode,
@@ -98,7 +100,7 @@ class Users extends BaseController
 
 
 
-				//TODO: send validation email to the user
+				//send validation email to the user
 				$subject = 'Image Editor - Email Verification';
 				$verificationUrl = base_url() . '/user/verify/' . $verificationCode;
 				$message = "Hello $firstName,<br><br>

@@ -22,20 +22,29 @@
                     <div class="col-12 col-sm-6 mt-2">
                         <div class="form-group">
                             <label for="first_name">First name</label>
-                            <input type="first_name" name="first_name" id="first_name" value="<?= set_value('first_name') ?>" class="form-control">
+                            <input type="text" name="first_name" id="first_name" value="<?= set_value('first_name') ?>" class="form-control">
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 mt-2">
                         <div class="form-group">
                             <label for="last_name">Last name</label>
-                            <input type="last_name" name="last_name" id="last_name" value="<?= set_value('last_name') ?>" class="form-control">
+                            <input type="text" name="last_name" id="last_name" value="<?= set_value('last_name') ?>" class="form-control">
                         </div>
                     </div>
                 </div>
-                <div class="form-group mt-2">
-                    <label for="email">Email address</label>
-                    <input type="email" name="email" id="email" value="<?= set_value('email') ?>" class="form-control">
+                <div class="row">
+                    <div class="form-group mt-2">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" value="<?= set_value('username') ?>" class="form-control">
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="form-group mt-2">
+                        <label for="email">Email address</label>
+                        <input type="email" name="email" id="email" value="<?= set_value('email') ?>" class="form-control">
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="col-12 col-sm-6 mt-2">
                         <div class="form-group">
