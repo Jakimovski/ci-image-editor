@@ -2,6 +2,8 @@
 
 namespace Config;
 
+use App\Controllers\UsernameValidator;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -40,6 +42,11 @@ $routes->group('user', function ($routes) {
 	$routes->match(['get', 'post'], 'register', 'Users::register', ['filter' => 'noauth']);
 	$routes->get('logout', 'Users::logout');
 	$routes->get('verify/(:any)', 'Users::verifyUser/$1');
+});
+
+$routes->group('validation', function ($routes) {
+	$routes->post('username_check', 'Validator::username_check');
+	$routes->post('email_check', 'Validator::email_check');
 });
 
 /*

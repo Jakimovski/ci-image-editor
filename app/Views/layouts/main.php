@@ -12,6 +12,9 @@
 
     <?= $this->renderSection('custom_css') ?>
     <title><?= isset($meta_title) ? $meta_title : 'Image Editor'  ?></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="<?= base_url('\assets\javascript\script.js?v=' . time()) ?>"> </script>
+
 </head>
 
 <body">

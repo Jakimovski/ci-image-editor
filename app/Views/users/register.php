@@ -36,12 +36,14 @@
                     <div class="form-group mt-2">
                         <label for="username">Username</label>
                         <input type="text" name="username" id="username" value="<?= set_value('username') ?>" class="form-control">
+                        <span id='username_availability'></span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group mt-2">
                         <label for="email">Email address</label>
                         <input type="email" name="email" id="email" value="<?= set_value('email') ?>" class="form-control">
+                        <span id='email_availability'></span>
                     </div>
                 </div>
 
